@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/taobao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="加载淘宝（加载不完全）"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
+    <Button
+        android:id="@+id/baidu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="加载百度"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/taobao"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/hybridTest"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="测试简单的 JS 交互"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/baidu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/callJS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="测试 JS 调用 WebView 方法"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/hybridTest"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

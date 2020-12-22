@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 调用 WebView</title>
+
+    <script>
+
+        function callAlert() {
+            alert("调用了JS的 callJSAlert");
+        }
+
+        function callAlertWithParams(params) {
+            alert("调用了JS的 callAlertWithParams , 并携带了参数："+params);
+        }
+
+        function callConfirm() {
+            confirm("调用了JS的 confirm()");
+        }
+
+        function callPrompt() {
+            prompt("调用了JS的 prompt()");
+        }
+
+        function toast() {
+            alert("toast alert")
+        }
+
+        function toastWithParams() {
+            alert("toast with params")
+        }
+
+        function callConsole(){
+            console.log("console called")
+        }
+    </script>
+</head>
+<body>
+
+<p>JS 调用 WebView</p>
+
+<div>
+    <button onclick="callAlert()">点我会回调 onJsAlert </button>
+    <button onclick="callAlertWithParams()">点我会回调 onJsAlert 并带参数</button>
+</div>
+
+<div>
+    <button onclick="callConsole()">点我测试 console.log</button>
+
+</div>
+
+<div>
+    <button onclick="callConfirm()">点我测试 confirm()</button>
+</div>
+
+
+<div>
+    <button onclick="callPrompt()">点我测试 prompt()</button>
+</div>
+
+</body>
+</html>
